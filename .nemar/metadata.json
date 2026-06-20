@@ -1,7 +1,8 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "RS_TMSEEG_Data",
+  "description": "This dataset comprises transcranial magnetic stimulation (TMS) concurrent with electroencephalography (EEG) recordings collected to develop and validate quantitative methods for identifying site- and stimulation-specific TMS-evoked potentials. The study presents a cosine similarity metric approach for characterizing TMS-EEG responses, with potential applications in non-invasive brain stimulation research and clinical neurophysiology.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +14,35 @@
     "Kareem A. Zaghloul": {},
     "Eric M. Wassermann": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds001849.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "TMS-EEG"
     },
+    {
+      "term": "Transcranial Magnetic Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D050781"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Evoked Potentials",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
+    },
+    {
+      "term": "brain stimulation"
+    },
+    {
+      "term": "Neurophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009482"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on001849",
       "identifier_type": "URL",
@@ -33,14 +57,19 @@
       "identifier": "10.1371/journal.pone.0216185",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds001849.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "47.8 GB (241 files)"
   ],
   "formats": [
     ".fdt",
@@ -48,35 +77,9 @@
     ".json",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises resting-state transcranial magnetic stimulation (TMS) concurrent with electroencephalography (EEG) recordings from multiple subjects. The study focuses on identifying site- and stimulation-specific TMS-evoked EEG potentials using quantitative cosine similarity metrics to characterize the electrophysiological responses to TMS across different brain regions.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Transcranial Magnetic Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D050781"
-    },
-    {
-      "term": "TMS-EEG"
-    },
-    {
-      "term": "Evoked Potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "brain stimulation"
-    },
-    {
-      "term": "cosine similarity metric"
-    }
-  ],
-  "source_hash": "d99513dee6c621d45f0db4e8a64e27569338b45b70b8ce4f96812530da74df85"
+  "methods_description": "Data were collected using concurrent TMS-EEG recordings. TMS was applied at multiple sites with concurrent EEG acquisition to capture TMS-evoked potentials.",
+  "source_hash": "fad6c857526f742bffd21d203b93a0404682b1d4689ecdcf19550eb7c9621bd4"
 }
