@@ -1,31 +1,82 @@
 {
   "version": "2.0",
-  "dataset_id": "on001849",
-  "source": "openneuro",
-  "source_id": "ds001849",
+  "pipeline_stage": "enriched",
   "title": "RS_TMSEEG_Data",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Michael Freedberg": {},
+    "Michael Freedberg": {
+      "orcid": "0000-0003-3738-8259"
+    },
     "Jack A. Reeves": {},
     "Sara J. Hussain": {},
     "Kareem A. Zaghloul": {},
     "Eric M. Wassermann": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds001849.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on001849",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001849",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1371/journal.pone.0216185",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "2.7.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".gitattributes",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises resting-state transcranial magnetic stimulation (TMS) concurrent with electroencephalography (EEG) recordings from multiple subjects. The study focuses on identifying site- and stimulation-specific TMS-evoked EEG potentials using quantitative cosine similarity metrics to characterize the electrophysiological responses to TMS across different brain regions.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Transcranial Magnetic Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D050781"
+    },
+    {
+      "term": "TMS-EEG"
+    },
+    {
+      "term": "Evoked Potentials",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "brain stimulation"
+    },
+    {
+      "term": "cosine similarity metric"
+    }
+  ],
+  "source_hash": "d99513dee6c621d45f0db4e8a64e27569338b45b70b8ce4f96812530da74df85"
 }
